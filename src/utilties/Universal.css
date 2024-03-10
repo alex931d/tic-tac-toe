@@ -1,0 +1,106 @@
+:root {
+  --bg-main-color: #192a32;
+  --shadow: #101f26;
+  --btn-color-yellow: #f2b237;
+  --btn-color-yellow-shadow: #f2b137c3;
+  --btn-color-turkis: #30c3bd;
+  --text-light-color: #617179;
+  --btn-color-turkis-shadow: #2eb7b3c4;
+  --btn-secoundary-color-shadow: #a8bec9b0;
+  --btn-secoundary-color: #a8bec9;
+  --ui-main-bg-color: #1f3540;
+  --overlay: #080809db;
+  --x-small-font-size: 0.9rem;
+  --small-font-size: 1rem;
+  --medium-font-size: 1.1rem;
+  --large-font-size: 1.2rem;
+  --x-large-font-size: 1.3rem;
+  --x-x-large-font-size: 2.1rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--bg-main-color);
+}
+.centerlized {
+  max-width: 500px;
+  min-width: 270px;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--ui-main-bg-color);
+  padding: 20px;
+  display: flex;
+  z-index: 999;
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+.btn.secoundary-btn {
+  background-color: var(--btn-secoundary-color);
+  box-shadow: 0px 5px 0px 0px var(--btn-secoundary-color-shadow);
+}
+.btn.third-btn {
+  background-color: var(--btn-color-turkis);
+  box-shadow: 0px 5px 0px 0px var(--btn-color-turkis-shadow);
+}
+.btn.main-btn {
+  background-color: var(--btn-color-yellow);
+  box-shadow: 0px 5px 0px 0px var(--btn-color-yellow-shadow);
+}
+.main-text {
+  font-size: var(--large-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.l {
+  font-size: var(--x-large-font-size);
+}
+.m {
+  font-size: var(--medium-font-size);
+}
+.secoundary-text {
+  font-size: var(--medium-font-size);
+  font-weight: bold;
+  color: var(--btn-secoundary-color);
+  text-transform: uppercase;
+}
+.btn {
+  min-width: 70px;
+  min-height: 45px;
+  border-radius: 10px;
+  border: none;
+  font-size: var(--medium-font-size);
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--ui-main-bg-color);
+}
+@media only screen and (max-width: 600px) {
+  .piece {
+    font-size: 20px;
+  }
+  .game {
+    width: 90%;
+  }
+  .board,
+  .menu {
+    max-width: 420px;
+  }
+}

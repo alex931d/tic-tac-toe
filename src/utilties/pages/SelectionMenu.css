@@ -1,0 +1,53 @@
+.selection-menu {
+  width: 50%;
+  height: auto;
+  min-height: 50%;
+}
+.selection-menu-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+.selection-menu-inner button {
+  width: 100%;
+}
+.pick-player-container {
+  background-color: var(--ui-main-bg-color);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.pick-player-container span:last-child {
+  color: var(--text-light-color);
+  font-size: 0.9rem;
+}
+.player-picker-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  gap: 7px;
+  background-color: var(--bg-main-color);
+  border-radius: 12px;
+}
+.pick-player-container span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.player-picker-wrapper button {
+  width: 100%;
+  background-color: var(--btn-secoundary-color);
+}
+.player-picker-wrapper button img {
+  width: 30px;
+  aspect-ratio: 1/1;
+  fill: var(--btn-secoundary-color);
+}
+.player-picker-wrapper button:not(.selected) {
+  background-color: var(--bg-main-color);
+}

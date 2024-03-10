@@ -1,0 +1,43 @@
+.score-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 350px;
+  gap: 15px;
+}
+.score-box {
+  width: calc(100% / 3);
+  height: 100%;
+  min-height: 55px;
+  padding: 10px;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.you {
+  background-color: var(--btn-color-turkis);
+  box-shadow: 0px 5px 0px 0px var(--btn-color-turkis-shadow);
+}
+.ties {
+  background-color: var(--btn-secoundary-color);
+  box-shadow: 0px 5px 0px 0px var(--btn-secoundary-color-shadow);
+}
+.enemy {
+  background-color: var(--btn-color-yellow);
+  box-shadow: 0px 5px 0px 0px var(--btn-color-yellow-shadow);
+}
+.score-box span:first-child {
+  color: var(--ui-main-bg-color);
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.score-box .number {
+  color: var(--ui-main-bg-color);
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
